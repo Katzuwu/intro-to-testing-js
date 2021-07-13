@@ -20,3 +20,7 @@ function sayHello(input) {
 function isFive(num){
 	return num == 5;
 }
+
+function isEven(num){
+	return typeof num === 'number' && num % 2 === 0;
+}

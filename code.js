@@ -8,5 +8,5 @@ var helloWorld = function () {
 }
 
 function sayHello(input) {
-     return "Hello " + input;
+     return "Hello, " + input + "!";
 }

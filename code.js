@@ -24,3 +24,11 @@ function isFive(num){
 function isEven(num){
 	return typeof num === 'number' && num % 2 === 0;
 }
+
+function isVowel(x) {
+	return ("aeiouAEIOU".indexOf(x) != -1);
+}
+
+function add(num1, num2){
+	return parseFloat(num1) + parseFloat(num2);
+}

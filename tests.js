@@ -82,3 +82,48 @@ describe('isEven', function (){
 		expect(isEven()).toBe(false);
 	});
 });
+
+describe('isVowel', function(){
+	it('should be a function', function () {
+		expect(typeof isVowel).toBe('function');
+	});
+	it('should return a boolean value', function () {
+		expect(typeof isVowel()).toBe('boolean');
+	});
+	it('should return true when "a" is passed', function () {
+		expect(isVowel("a")).toBe(true);
+	});
+	it('should return true when "A" is passed', function () {
+		expect(isVowel("A")).toBe(true);
+	});
+	it('should return false when a non vowel letter is passed', function () {
+		expect(isVowel("y")).toBe(false);
+	});
+	it('should return false when a number is passed', function () {
+		expect(isVowel(4)).toBe(false);
+	});
+	it('should return false when nothing is passed', function () {
+		expect(isVowel()).toBe(false);
+	});
+	it('should should return false when true or false are passed', function () {
+		expect(isVowel(true)).toBe(false);
+	});
+	it('should return false when a string is passed', function () {
+		expect(isVowel('banana')).toBe(false);
+	});
+});
+
+describe('add', function (){
+	it('should be a function', function () {
+		expect(typeof add).toBe('function');
+	});
+	it('should return a number', function () {
+		expect(typeof add()).toBe('number');
+	});
+	it('should add two numbers together', function () {
+		expect(add(2, 3)).toBe(5);
+	});
+	it('should return NaN when two strings are entered', function () {
+		expect(add('banana', 'split')).toBeNaN();
+	});
+})
